@@ -93,6 +93,8 @@ parts:
   - file: content/theme/programmation-avancee/eleve
   - file: content/theme/projets/accueil/eleve
   - file: content/theme/reseaux/accueil/eleve
+    sections:
+      - file: content/theme/reseaux/cours/structure
 
 ## Annexes
 - caption: Annexes
