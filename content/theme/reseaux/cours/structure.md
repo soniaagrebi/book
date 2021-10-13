@@ -17,7 +17,7 @@ Dans un réseau centralisé comme le téléphone traditionnel, un opérateur cen
 ### Commutation par paquets
 Dans un réseau centralisé comme le téléphone, lorsque deux personne sont en communication, elles "occupent la ligne": ces deux personnes ne sont pas joignables par d'autres personnes (c'est ce qu'indique le signal "occupé"), mais cela n'implique pas d'autres personnes qui veulent communiquer entre elles (sauf si le standard et surchargé). C'est ce qu'on appelle la *commutation de circuits* car un circuit électrique est créé entre les deux appareils qui communiquent. 
 
-Imaginons maintenant qu'une relation soit établie entre deux appareils d'un réseau décentralisé (monter une image). Si l'on avait une commutation de circuits, toutes les connexions utilisées pour acheminer l'information entre deux appareils seraient inutilisables pour les autres personnes utilisatrices du réseaux. Cela pourrait conduire rapidement à une saturation du réseau. Pour éviter ce problème, il a été décidé de "découper" la communication en petits morceaux (appelé les paquets) et d'envoyer chaque morceaux individuellement. C'est ce qu'on appelle la *commutation par paquets*. C'est un peu comme si au téléphone on raccrochait et on se rappelait entre chaque mot. Cela ne monopolise pas la ligne et permet de mener plusieurs conversations en même temps sur la même ligne. En plus, cela ne sollicite la ligne que lorsqu'une information est transmise et par, par exemple, pendant les moments de silence, ou lorsqu'on est en train de rédiger sa réponse sur une messagerie. 
+Imaginons maintenant qu'une relation soit établie entre deux appareils d'un réseau décentralisé (montrer une image). Si l'on avait une commutation de circuits, toutes les connexions utilisées pour acheminer l'information entre deux appareils seraient inutilisables pour les autres personnes utilisatrices du réseaux. Cela pourrait conduire rapidement à une saturation du réseau. Pour éviter ce problème, il a été décidé de "découper" la communication en petits morceaux (appelé les paquets) et d'envoyer chaque morceaux individuellement. C'est ce qu'on appelle la *commutation par paquets*. C'est un peu comme si au téléphone on raccrochait et on se rappelait entre chaque mot. Cela ne monopolise pas la ligne et permet de mener plusieurs conversations en même temps sur la même ligne. En plus, cela ne sollicite la ligne que lorsqu'une information est transmise et par, par exemple, pendant les moments de silence, ou lorsqu'on est en train de rédiger sa réponse sur une messagerie. 
 
 ### Les protocoles
 Lorsque deux personnes entrent en communication, elle se mettent d'accord (souvent implicitement) sur la manière dont elles communiquent, par exemple la langue qu'elles vont utiliser, la manière dont on signifie la début et la fin d'une conversation (les salutations), etc. Pour les machines, ces règles doivent être précisées beaucoup plus précisément car les machines n'ont pas la faculté d'interprétation et d'adaptation des humains. Dans un réseau décentralisé, il faut spécifier quels sont exactement les signaux que doit envoyer une machine qui veut se connecter au réseau et établir une communication avec une autre machine. C'est ce qu'on appelle le *protocole de communication*, par exemple comment la machine indique qu'elle veut établir ou fermer une communication, comment elle indique avec qui elle veut établir une communication, etc. Il y a pleins de protocoles différents, par exemple le protocole qui régit comment une machine veux se connecter par wifi à un routeur, le protocole qui régit comment demander le contenu d'une page web à un serveur, le protocole qui régit comment envoyer un email sur le réseau, ou se connecter à distance sur une autre machine (mettre les noms?).
@@ -29,18 +29,32 @@ considérons la situation suivante
 
 
 # Exemple: l'application aux champignons
-Imaginons qu'Alice est partie à la cueillette aux champignons dans la forêt. Elle pense avoir trouvé un beau bolet, mais pour plus de sécurité, consulte avec son téléphone portable un site web spécialisé dans les champigons de notre régions.
+Imaginons qu'Alice est partie à la cueillette aux champignons dans la forêt. Elle pense avoir trouvé un beau bolet, mais pour plus de sécurité, consulte avec son téléphone portable un site web spécialisé dans les champigons de notre région, *www.champignons.ch* Que se passe-t-il réellement entre derrière l'écran de son téléphone? C'est ce que nous allons découvrir dans ce chapitre. 
 
 # Etablir une communication (adressage et routage)
 ## Les noms de domaine
+Le nom *champignons.ch* est ce qu'on appelle un *nom de domaine*. Les nom de domaines sont gérés par l'ICANN (préciser). 
+- Quelques mots sur la gouvernances des npoms de domaines et comment on fait pour en obtenir. 
+- Une transition pour dire que les nom de domaines sont utiles pour les humains pour désigner des ordinateurs branchés sur le réseau, mais que les machines utilisent des adresses IP. 
+
+Exercice: déterminer à l'aide du site web https://www.nic.ch/whois/ qui a enregistré le nom de domaine champignons.ch. 
 ## Les adresses IP
+- IPv4
+- IPv6
+- IP statique vs dynamique
+- DNS
 ## La tables de routage
 ### Routage dynamique
 
 # Envoyer de l'information (paquets et protocoles)
-## Le protocole HTTP
 ## Le protocole TCP
 ## Le protocole IP
+
+# Le world wide web
+## Le protocole HTML
+## L'URL
+## Le langage HTML
+
 # Le modèle en couche
 
 
