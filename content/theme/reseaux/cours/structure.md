@@ -51,7 +51,7 @@ Exercice: déterminer à l'aide du site web https://www.nic.ch/whois/ qui a enre
 ## Le protocole IP
 
 # Le world wide web
-## Le protocole HTML
+## Le protocole HTTP
 ## L'URL
 ## Le langage HTML
 
