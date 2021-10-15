@@ -1,15 +1,3 @@
----
-jupytext:
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.10.3
-kernelspec:
-  display_name: Python 3.9.1 64-bit
-  name: python3
----
-
 # Variables et expressions
 
 Les données qu'un ordinateur manipule se trouvent dans sa mémoire.
@@ -45,7 +33,6 @@ Dans l'exemple suivant nous affectons trois valeurs aux variables `a`, `b` et `c
 Ensuite nous pouvons afficher ces variables avec la fonction `print()`.
 
 ```{codeplay}
-:exec:
 a = 123
 b = 'hello'
 c = True
@@ -56,7 +43,6 @@ print(a, b, c)
 Par la suite, nous pouvons utiliser la variable `a` dans une expression arithmétique.
 
 ```{codeplay}
-:exec:
 a = 123
 
 print(a + 2)
@@ -67,7 +53,6 @@ print(a ** 2)
 À n'importe quel moment, la variable peut être réaffectée, et donc changer de valeur.
 
 ```{codeplay}
-:exec:
 a = 12
 print(a ** 2)
 
@@ -80,7 +65,6 @@ print(a ** 2)
 Python permet d'affecter plusieurs variables sur une même ligne.
 
 ```{codeplay}
-:exec:
 a, b = 10, 200
 print(a, b)
 ```
@@ -88,7 +72,6 @@ print(a, b)
 L'affectation multiple est une manière élégante d'échanger les valeurs de deux variables.
 
 ```{codeplay}
-:exec:
 a, b = 10, 200
 print(a, b)
 
@@ -108,7 +91,6 @@ Normalement cette valeur est affectée à une variable.
 Voici un exemple de code pour vous saluer personnellement.
 
 ```{codeplay}
-:exec:
 nom = input('Entrez votre nom (suivi par Enter): ')
 print('Bonjour', nom)
 ```
@@ -133,7 +115,6 @@ La dernière expression contient deux sous-expressions entre parenthèses.
 Elles sont évaluées d'abord et donnent l'expression simplifiée `3 * 7` qui est de nouveau évaluée et qui donne `21` comme résultat final.
 
 ```{codeplay}
-:exec:
 a = 7
 
 print(a)
@@ -156,7 +137,6 @@ Par exemple nous pouvons multiplier deux nombres mais nous ne pouvons pas multip
 La fonction `type()` nous retourne le type de la valeur donnée comme argument.
 
 ```{codeplay}
-:exec:
 print(123, type(123))
 print(1.23, type(1.23))
 print('123', type('123'))
@@ -167,7 +147,6 @@ L'expression `123` est de type `int` (integer = entier) tandis que la même expr
 Les objets `123` et `'123'` sont traités de façon différente dans une expression:
 
 ```{codeplay}
-:exec:
 print(123 * 3)
 print('123' * 3)
 ```
@@ -177,7 +156,6 @@ print('123' * 3)
 Le nom d'une variable est sensible à la casse (minuscule ou majuscule). Ainsi, `a` et `A` sont deux variables différentes.
 
 ```{codeplay}
-:exec:
 a = 1
 A = 99
 print(a, A)
