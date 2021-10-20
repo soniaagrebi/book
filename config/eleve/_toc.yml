@@ -95,6 +95,7 @@ parts:
   - file: content/theme/reseaux/accueil/eleve
     sections:
       - file: content/theme/reseaux/cours/structure
+      - file: content/theme/reseaux/cours/adressage/eleve
 
 ## Annexes
 - caption: Annexes
