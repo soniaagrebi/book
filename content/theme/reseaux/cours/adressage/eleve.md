@@ -20,7 +20,9 @@ Exercice: déterminer à l'aide du site web https://www.nic.ch/whois/ qui a enre
 ## Les adresses IP
 ### Version 4 (IPv4)
 Afin de pouvoir identifier chacune des machines connectées à Internet, il a été décidé de leur attribuer à chacune
-un nombre de 32 bits, c'est-à-dire entre 0 et 2^32-1=4'294'967'295 (4 millards 294 millons 967 mille 295). On pensait
+un nombre, un peu à la manière dont les numéros de téléphones sont attribués à chaque téléphone du réseau téléphonique.
+Dans sa version la plus courante, ce nombre est codé sur 32 bits, c'est-à-dire entre 0 et 2^32-1=4'294'967'295
+(4 millards 294 millons 967 mille 295). On pensait
 alors (c'était en 1982) que ce serait amplement suffisant pour pouvoir accomoder toutes les machines et qu'Internet
 ne dépasserait pas les 4 millards de machines connectées. [dire combien il y en avait à l'époque].
 Afin de rendre ces adresses plus lisibles pour les humains, on décompose d'habitude une adresse IP de 32 bits en
@@ -40,8 +42,7 @@ Lesquelles des adresses suivantes sont des adresses IP valides:
 Comme les noms de domaine, les adresses IP sont gérée hiérarchiquement. Ainsi, les adresses de la forme 
 46.x.x.x (c'est-à-dire celles qui commencent par 46 = 00101110) sont assignées au Centre de Coordination
 Européeen qui les répartis entre différents *Registres Internet locaux* tels que Switch qui va pouvoir
-louer une partie de ces adresses IP à des organisations, des entreprises ou des particuliers qui en
-feraient la demande. 
+louer une partie de ces adresses IP à des organisations, des entreprises (par exemple des fournisseurs d'accès Internet) ou des particuliers qui en feraient la demande. 
 
 Certains blocs d'adresses IP sont réservés à des usages particuliers. Par exemple les adresses 10.x.x.x  ou
 192.168.x.x sont réservées aux réseaux privés, c'est-à-dire des machines qui ne communiquent pas directement
@@ -55,7 +56,20 @@ maison.
 - Donner la représentation binaire de l'adresse IP y.y.y.y
 - Combien y a-t-il d'adresses IP de type 192.168.x.x ?
 
-### Adressage dynamique
+### Adressage statique et dynamique
+
+Une adresse IP peut être alouée de manière *statique* ou *dynamique*. Dans le cas de l'adressage statique, on configure la machine en lui indiquant son adresse IP, est c'est elle qui annonce au réseau quelle est son
+adresse IP, afin que les messages puisse lui parvenir. La machine conserve ainsi toujours la même adresse IP, de la même façon qu'un téléphone conserve toujours le même numéro (sauf si on le reconfigure en modifiant par exemple la carte SIM). Dans le cas de l'adressage dynamique, la machine demande une adresse IP au moment où elle se connecte à Internet. Cette demande se fait auprès d'un serveur qui va lui allouer une adresse IP disponible parmi celles qu'il a à disposition. C'est un peu comme si chaque fois qu'on allumait son téléphone, on recevait un autre numéro pour être joignable. Si c'est nous qui initions les appels, cela ne pose pas vraimment de problème, mais si on veut être
+joignable, cela devient problématique car les autres ne sauront pas comment nous trouver. Mais cela a d'une part l'avantage d'éviter qu'une machine non connectée monopolise une adresse IP sans l'utiliser et d'autre part, cela donne un (petit) degré d'anonymat et de sécurité en plus, car il sera plus difficile de cible précisément notre machine et intercepter nos messages sur sur internet.
+
+Ainsi les serveurs (les sites web, par exemple), qui doivent être joignable en tout temps ont généralement une adresse IP statique, alors que les machines des utilisateurs et utilisatrices ont souvent une adresse IP dynamique. Lorsqu'on fait un
+abonnement internet, le fournisseur d'accès propose d'habitude une adresse IP dynamique (cela lui permet d'économiser les adresse IP en sa possession), mais il est également possible, en payant un peu plus, d'obtenir une adresse IP statique. 
+
+Exercice:
+- Déterminer si votre machine a une adresse IP statique ou dynamique
+- Vous souhaitez entrer en communication avec votre ami-e, mais vous avez les deux des adresses IP dynamique. Quel
+moyen pourriez-vous imaginer pour que vous puissiez vous joindre. 
+- En tant que propriétaire d'un site web, vous avez accès aux adresses IP des machines qui visitent votre site. Que pouvez-vous en déduire 
 
 ### Serveur de noms de domaine
 
