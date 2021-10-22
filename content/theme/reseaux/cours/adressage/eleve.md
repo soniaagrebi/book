@@ -71,8 +71,11 @@ Exercice:
 moyen pourriez-vous imaginer pour que vous puissiez vous joindre. 
 - En tant que propriétaire d'un site web, vous avez accès aux adresses IP des machines qui visitent votre site. Que pouvez-vous en déduire 
 
-### Serveur de noms de domaine
+### Système de noms de domaine
+Pour récapituler ce qui a été vu précédemment, les humains utilisent les noms de domaines pour les machines, alors que les machines, elles, utilisent les adresses IP. Afin que ces deux modes de recensement des machines soient cohérents entre eux, il est nécessaire de disposer d'un annuaire qui fera correspondre les noms de domaines aux adresses IP. Ceci est analogue aux annuaires téléphoniques qui permettre de faire correspondre le nom des personnes que l'on veut atteindre (qui serait équivalent au nom de domaine) au numéro de téléphone (qui est analogue à l'adresse IP). Cet annuaire est ce qu'on appelle le *système de noms de domaine* (Domain Name System ou DNS selon l'appellation anglaise). Au début d'internet, il s'agissait simplement d'un fichier texte librement accessible qui listait le noms de domaines et les adresses IP correspondantes. Ce fichier était maintenu à la main. Maintenant, il s'agit de machines, les serveurs DNS dans le réseau auprès desquelles il est possible d'obtenir l'adresse IP correspondante à un nom de domaine. Ces machines sont aussi organisée hierarchiquement de telle sorte que chaque serveur DNS ne stocke que les noms de domaines correspondant à une sous partie du réseau. 
 
+[Mettre une illlustration]
+[Donner quelques détails du système ? ]
     
 ### Version 6 (IPv6)
 Avec le développement d'Internet, il est vite devenu clair que le nombres de machines connectées à Internet allait dépasser le nombre d'adresses IP différentes, et c'est pourquoi des nouveaux type d'adressage à été développé dès les années 90, IPv6 (Internet Protocol, version 6). Il a été décidé de coder les adresses IP sur 128 bits. Plutôt que

@@ -62,29 +62,7 @@ avec son téléphone portable un site web spécialisé dans les champigons de no
  Que se passe-t-il réellement entre derrière l'écran de son téléphone?
  C'est ce que nous allons découvrir dans ce chapitre. 
 
-# Etablir une communication (adressage et routage)
-## Les noms de domaine
-Le nom *champignons.ch* est ce qu'on appelle un *nom de domaine*.
-Les noms de domaines sont gérés par l'ICANN, une organisation non gouvernementale à but non lucratif
-basée aux Etats-Unis dont la fonction principale est la gestions de l'adressage sur Internet.
-Les noms de domaines sont gérés de manière hierarchique, selon le
-*nom de domaine de premier niveau*, c'est à dire la "terminaison" de l'adresse (*.ch*, *.org*, *.fr*, etc.)Ainsi la gestion des adresses en *.ch* est confiée à Switch, une fondation suisse dont c'est le rôle principal.La personne qui a créé le site *champignons.ch* a donc
-réservé ce nom de domaine auprès de Switch (en passant par un intermédiaire) et peut le conserver moyennant un paiement d'environ CHF 15.- par an.     
-[Faire un encadré sur l'internationalisation des noms de domaines, et les controverses (.sucks)? ]
-
-Si les noms de domaines sont pratiques pour désigner des adresses sur internet, les machines, elles, utilisent des nombres pour référencer les machines
-connectées à Internet, c'est ce qu'on appelles les *adresses IP*. Ainsi, la personne qui a enregistré le site *champignons.ch* a également reçu une (ou plusieurs)
-adresses IP de la part de Switch ou d'un intermédiaire. 
-
-[Ajouter une illustration de la gestion des nom de domaines? ]
-    
-Exercice: déterminer à l'aide du site web https://www.nic.ch/whois/ qui a enregistré le nom de domaine champignons.ch. 
-
-## Les adresses IP
-- IPv4
-- IPv6
-- IP statique vs dynamique
-- DNS
+# Acheminer l'information
 ## La tables de routage
 ### Routage dynamique
 
