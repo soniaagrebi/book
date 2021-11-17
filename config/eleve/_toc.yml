@@ -97,6 +97,7 @@ parts:
       - file: content/theme/reseaux/cours/structure
       - file: content/theme/reseaux/cours/adressage/eleve
       - file: content/theme/reseaux/cours/routage/eleve
+      - file: content/theme/reseaux/cours/tcp-ip/eleve
 ## Annexes
 - caption: Annexes
   numbered: false
