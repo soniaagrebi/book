@@ -67,6 +67,9 @@ parts:
     - file: content/ens/enjeux/fiches-complementaires/wikipedia/wikipedia
     - file: content/ens/enjeux/fiches-complementaires/affaire-snowden/affaire-snowden
     - file: content/ens/enjeux/fiches-complementaires/genre-numerique/genre-numerique
+  - file: content/ens/enjeux/activites/intro-activites
+    sections:
+    - file: content/ens/enjeux/activites/environnement/emissions_ges/emission_ges     
   - file: content/ens/enjeux/bibliographie
 
 ## Annexes

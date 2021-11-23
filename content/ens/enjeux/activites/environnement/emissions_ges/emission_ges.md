@@ -1,4 +1,4 @@
-# Estimations d'émissions de gaz à effets de serre
+# Estimations d'émissions de CO2
 
 ## Objectif
 L'objectif princpal de cette activité est de faire prendre conscience aux élèves de l'ordre de grandeur de l'impact de certaines activités numériques sur le
@@ -66,7 +66,7 @@ Chaque groupe essaie d'estimer la consommation de CO2 de son activité. L'enseig
 Une fois le calcul éffectué, les élèves doivent chercher sur internet s'il est possible de trouver la quantité de GES émise lors de la production
 de l'appareil utilisé. 
 
-### Présentation et discussion des résultats
+### 5. Présentation et discussion des résultats
 
 Chaque groupe présente à tour de rôle sa feuille de calcule, et justifie les choix effectués. L'enseignant-e corrige au besoin et demande à la classe
 s'il y a des éléments dont il n'a pas été tenu compte dans le calcul. 
@@ -74,7 +74,7 @@ On note le résultat obtenu en vis-a-vis du sondage "à priori".
 On compare ensuite l'ensemble des résultats avec ceux des sondages, et une discussion s'ensuit. Les élèves peuvent partager s'ils et elles sont surpris-es par
 les résultats. 
 
-### Conclusion
+### 6. Conclusion
 En guise de conclusion et pour boucler la boucle, l'enseignant présente des graphiques résumant les principaux postes d'émissions de GES par la Suisse (surtout transports et chauffage), explique la distinction entre émissions locales et importées, et montre où en est la Suisse par rapport aux capacités d'absorbtion de la planète (23x en 2015).  
 
 
