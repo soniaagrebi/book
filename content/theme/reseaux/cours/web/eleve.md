@@ -15,9 +15,19 @@ gratuitement mises à disposition du public. Des centres de recherche, universit
 organisations ont créé leur site web afin de pouvoir facilement diffuser des informations par ce canal. Ceci offrait un usage supplémentaire
 de l'ordinateur dont les foyers se sont équippés massivement, diffusant ainsi l'accès à Internet au sein de la population américaine et européenne. 
 
-## Les technologies du WEB
+## Les technologies du Web
+Le web repose sur trois technologies mises ensemble et qui permettent de naviguer dans une "toile" de documents. 
+La première, l'URL, spécifie un format permettant de spécifier la localisation d'un document. La seconde, le protocole HTTP, 
+permet de demander et de recevoir un document identifié par son URL. La troisième, le langage HTML, permet de décrire
+le contenu d'un document (une page web) pouvant contenir des liens vers d'autres documents spécifiés par leur URL.  
 
-### L'URL
+Ces trois technologies sont rassemblées dans un navigateur web, qui permet de
+1. spécifier une page web à visiter en indiquant son URL, typiquement dans une barre de navigation
+1. demander la page web au serveur correspondant et la réceptionner en utilisant le protocole HTTP
+1. afficher le contenu de la page web, y compris les liens cliquables permettant d'afficher d'autres pages web. 
+
+
+### URL
 
 ### HTTP
 
