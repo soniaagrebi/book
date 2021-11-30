@@ -21,7 +21,7 @@ La première, l'URL, spécifie un format permettant de spécifier la localisatio
 permet de demander et de recevoir un document identifié par son URL. La troisième, le langage HTML, permet de décrire
 le contenu d'un document (une page web) pouvant contenir des liens vers d'autres documents spécifiés par leur URL.  
 
-Ces trois technologies sont rassemblées dans un navigateur web, qui permet de
+Ces trois technologies sont rassemblées dans un *navigateur web*, un programme qui permet de
 1. spécifier une page web à visiter en indiquant son URL, typiquement dans une barre de navigation
 1. demander la page web au serveur correspondant et la réceptionner en utilisant le protocole HTTP
 1. afficher le contenu de la page web, y compris les liens cliquables permettant d'afficher d'autres pages web. 
