@@ -3,7 +3,7 @@
 La conversion
 d’une grandeur physique analogique
 continue
-– température, vitesse du vent, position d'une girouette, etc., –
+– température, vitesse du vent, position d'une girouette, etc. –
 en données numériques digitales
 est appelée **numérisation**.
 Elle est réalisée
@@ -148,8 +148,8 @@ Effet de la fréquence d'échantillonnage
 (sampling rate : 100, 200 et 400 Hz)
 sur la représentation
 obtenue par numérisation.
-Puis la fréquence est élevée,
-puis la quantité
+Plus la fréquence est élevée,
+plus la quantité
 d'information collectée
 est importante.
 Dans tous les cas,
@@ -209,7 +209,7 @@ du système électrique local :
 50 Hz pour le PAL européen
 (et 25 images par seconde).
 En choisissant
-le mulitple commun
+le multiple commun
 de 44.1 kHz,
 la norme permettait d'être
 utilisée

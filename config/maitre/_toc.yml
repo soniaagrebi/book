@@ -7,19 +7,19 @@ parts:
   chapters: 
   - file: content/theme/representation-information/cours/introduction/maitre
     sections:
-      - file: content/theme/representation-information/cours/representation-entiers/maitre
-      - file: content/theme/representation-information/cours/representation-images/eleve
+    #  - file: content/theme/representation-information/cours/representation-entiers/maitre
+    #  - file: content/theme/representation-information/cours/representation-images/eleve
     #  - file: content/theme/representation-information/cours/representation-images/maitre
-      - file: content/theme/representation-information/activites/representation-images/bitmap/bitmap
-      - file: content/theme/representation-information/activites/representation-images/EncoderImages/EncoderImages
       - file: content/theme/representation-information/activites/representation-son/visu-et-ecoute-son.md
       - file: content/theme/representation-information/exercices/eleve
         sections:
           - file: content/theme/representation-information/exercices/representation-caracteres/carte-perforee/exercice
+          - file: content/theme/representation-information/activites/redondance/radiotelephonie/activite
+          - file: content/theme/representation-information/activites/representation-images/bitmap/bitmap
       - file: content/theme/representation-information/activites/maitre
         sections:
           - file: content/theme/representation-information/activites/representation-entiers/magie-binaire/magie_binaire
-          - file: content/theme/representation-information/activites/redondance/radiotelephonie/activite
+          - file: content/theme/representation-information/activites/representation-images/EncoderImages/EncoderImages
 
   - file: content/theme/programmation/maitre
     sections:
@@ -61,6 +61,7 @@ parts:
     sections:
     - file: content/enjeux/grandes-thematiques/economie-numerique/economie-numerique
     - file: content/enjeux/grandes-thematiques/surveillance/surveillance
+    - file: content/enjeux/grandes-thematiques/environnement/environnement
   - file: content/enjeux/fiches-complementaires/fiches-complementaires
     sections:
     - file: content/enjeux/fiches-complementaires/digital-labor/digital-labor

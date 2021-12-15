@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Informatique au Gymnase
+title: Apprendre
 author: Groupe de travail DGEP, EPFL, HEP, UNIL
-logo: logo1.svg
+logo: logo_modulo.svg
 exclude_patterns: ['**/maitre.md', 'content/skel/**']
 
 #######################################################################################
@@ -33,11 +33,11 @@ sphinx:
     html_favicon: favicon.ico
     html_extra_path: ['../assets']
     html_theme_options:
-      use_download_button: false
+      use_download_button: true
       repository_url: https://github.com/edunumsec2/book
       use_issues_button: true
       use_repository_button: true
-      use_edit_page_button: false
+      use_edit_page_button: true
       extra_navbar: ""
       extra_footer: |
         <p>

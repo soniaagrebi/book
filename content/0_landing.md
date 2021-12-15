@@ -1,11 +1,13 @@
-<!-- ````{image} 0_chatbot.svg
-````  
--->
+ ````{image} modulo_banner3.svg
+````
+<br>
+<br>
 
-# Informatique au Gymnase
 
-Bienvenue dans les ressources pour l'informatique au gymnase. 
-
+# Informatique au gymnase
+</div>
+<br>
+Bienvenue dans les ressources pour l'informatique au gymnase.<br> 
 Ces ressources ont été conçues pour vous accompagner dans votre enseignement. 
 
 ````{admonition} Ces ressources sont en cours de rédaction
@@ -15,5 +17,5 @@ Attention, le document présenté ici ne représente qu'une **étape intermédia
 
 <!-- {ref}`Accéder à la présentation des ressources <presentationressources>`. -->
 
-```{tableofcontents}
-```
+<!-- ```{tableofcontents}
+``` -->
