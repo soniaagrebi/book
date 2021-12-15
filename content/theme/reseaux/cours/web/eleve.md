@@ -24,12 +24,35 @@ le contenu d'un document (une page web) pouvant contenir des liens vers d'autres
 Ces trois technologies sont rassemblées dans un *navigateur web*, un programme qui permet de
 1. spécifier une page web à visiter en indiquant son URL, typiquement dans une barre de navigation
 1. demander la page web au serveur correspondant et la réceptionner en utilisant le protocole HTTP
-1. afficher le contenu de la page web, y compris les liens cliquables permettant d'afficher d'autres pages web. 
+1. afficher le contenu de la page web (décrite au format HTML), y compris les liens cliquables permettant d'afficher d'autres pages web. 
 
 
 ### URL
+L'URL (*Uniform Resource Locator*) est une manière de spécifier la localisation d'un document disponible sur Internet.
+Une exemple d'URL peut être par exemple "https://www.champignons.ch/fichiers/fr/contact.html". 
+
+Une URL comporte tros parties, qui sont les suivantes dans notre exemple |https|://www.champignons.ch|/fichiers/fr/contact.html|.  [mettre en couleur les trois parties]
+Autrement dit, une URL se compose généralement de la manière suivante:
+
+*protocol*:*domaine*/*chemin*
+
+1. Le *protocole*, dans notre exemple `https`, indique le protocole utiliser pour avoir accès à la ressource. Pour le web, ce protocole est toujouts `http`ou `https`, sa version sécurisée. Mais l'URL étant aussi utilisée en dehors du web, il y a d'autres protocoles possibles, par exemple `ftp` pour faire du transfert de fichier. 
+
+1. Le *domaine* spécifie la machine (ou le serveur) où aller chercher le fichier. Cela peut être un nom de domaine, mais également une adresse IP
+
+1. Le *chemin* indique quel fichier on souhaite obtenir de la part du serveur. On part de la racine "/" (connue du serveur) et on descend dans l'arborescence selon répertoires indiqués. Par exemple `/fichiers/fr/contact.html` est le fichier `contact.html` qui se trouve dans le répertoire  `fr` qui se trouve lui-même dans le répertoire `fichiers`.  [Ajouter une illustration]. 
+
+Dans le protocole HTTP, si le chemin est un répertoire (et pas un fichier), le fichier par défaut index.html présent dans ce répertoire est envoyé par le serveur. 
+
+
 
 ### HTTP
+HTTP (*HyperText Transfer Protocol) est le protocole qui régit la manière dont un client web (par exemple le navigateur web de Alice) et un serveur web (par exemple le site www.champignons.ch) vont interagir l'un avec l'autre. 
+
+Par exemple 
+
+[Ajouter quelque chose sur l'erreur 404]
+
 
 ### HTML
 

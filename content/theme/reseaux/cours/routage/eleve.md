@@ -1,4 +1,5 @@
-# Le routage ou comment acheminer l'information
+# Routage 
+(ou comment acheminer l'information)
 Nous avons vu précédemment, comment il est possible d'identifier sur internet
 une machine avec laquelle on souhaite communiquer, en ayant recours à son
 adresse IP ou un nom de domaine. Contrairement à un système centralisé comme

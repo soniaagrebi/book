@@ -1,4 +1,6 @@
-# L'adressage ou comment identifier son interlocuteur
+# Adressage 
+
+(ou comment identifier son interlocuteur)
 ## Les noms de domaine
 Le nom *champignons.ch* est ce qu'on appelle un *nom de domaine*.
 Les noms de domaines sont gérés par l'ICANN, une organisation non gouvernementale à but non lucratif
