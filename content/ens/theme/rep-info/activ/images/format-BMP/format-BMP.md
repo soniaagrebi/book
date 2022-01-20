@@ -37,13 +37,13 @@ Il existe d'autres solutions, notamment l'éditeur [Hex Fiend](https://hexfiend.
 
 ### Fichiers
 
-- Fichier modèle 4 pixels par 4 pixels: [files.modulo-info.ch/petit.bmp](https://files.modulo-info.ch/petit.bmp)
-- Fichier modèle 8 pixels par 8 pixels: [files.modulo-info.ch/grand.bmp](https://files.modulo-info.ch/grand.bmp)
-- Fichier modèle 8 pixels par 8 pixels, avec palette de couleurs: [files.modulo-info.ch/palette.bmp](https://files.modulo-info.ch/palette.bmp)
+- Fichier modèle 4 pixels par 4 pixels: [files.modulo-info.ch/bmp/petit.bmp](https://files.modulo-info.ch/bmp/petit.bmp)
+- Fichier modèle 8 pixels par 8 pixels: [files.modulo-info.ch/bmp/grand.bmp](https://files.modulo-info.ch/bmp/grand.bmp)
+- Fichier modèle 8 pixels par 8 pixels, avec palette de couleurs: [files.modulo-info.ch/bmp/palette.bmp](https://files.modulo-info.ch/bmp/palette.bmp)
 
 ### Resources
 
-- Sélectionneur de couleurs BGR: [files.modulo-info.ch/couleurs.html](https://files.modulo-info.ch/couleurs.html)
+- Sélectionneur de couleurs BGR: [files.modulo-info.ch/bmp/couleurs.html](https://files.modulo-info.ch/bmp/couleurs.html)
 
 ## Références théoriques pour l'enseignant
 
@@ -57,30 +57,94 @@ Au besoin, la [version anglaise de l'article](https://en.wikipedia.org/wiki/BMP_
 
 ### Étape 1 : Double lecture des fichiers [5 minutes]
 
-L'enseignant invite les élèves à télécharger le premier fichier utilisé à l'adresse:
-[files.modulo-info.ch/petit.bmp](https://files.modulo-info.ch/petit.bmp).
+L'enseignant·e invite les élèves à télécharger le premier fichier utilisé à l'adresse:
+[files.modulo-info.ch/bmp/petit.bmp](https://files.modulo-info.ch/bmp/petit.bmp).
 
-Puis, il invite les élèves à ouvrir le fichier à l'aide d'une visionneuse d'image (par exemple `Aperçu` sur Mac OS X).
+Puis, l'enseignant·e invite les élèves à ouvrir le fichier à l'aide d'une visionneuse d'image (par exemple `Aperçu` sur Mac OS X).
 Il est à noter qu'il faut bien zoomer pour voir l'image étant donné sa petite taille.
 
-L'enseignant montre qu'il s'agit d'une image de 4 par 4 pixels, tous de couleur blanche.
-Il en profite pour donner une définition du terme "pixel".
+L'enseignant·e montre qu'il s'agit d'une image de 4 par 4 pixels, tous de couleur blanche.
+Il ou elle en profite pour donner une définition du terme "pixel".
 
 > Le pixel est plus petit élément qui compose une image.
 > Chaque pixel d'une image est un carré de couleur qui occupe une place dans la grille de l'image.
 > Le terme provient de l'anglais ***pic**ture **el**ement*.
 
-Après cela, l'enseignant invite les élèves à ouvrir l'image dans un éditeur hexadécimal (par exemple [Hexed.it](https://hexed.it)).
-L'enseignant explique aux élèves ce qu'ils ont sous les yeux: la séquence d'octets qui représente l'image.
-L'enseignant souligne les deux façons de visualiser le même fichier:
+Après cela, l'enseignant·e invite les élèves à ouvrir l'image dans un éditeur hexadécimal (par exemple [Hexed.it](https://hexed.it)).
+L'enseignant·e explique aux élèves ce qu'ils ont sous les yeux: la séquence d'octets qui représente l'image.
+L'enseignant·e souligne les deux façons de visualiser le même fichier:
 - Son interprétation en tant qu'image dans la visionneuse d'image, et
 - Son interprétation en tant que séquence d'octets dans l'éditeur hexadécimal.
 
-S'il est possible de le faire dans l'éditeur, l'enseignant montre les bits qui se cachent sous la notation hexadécimale des octets. Dans [Hexed.it](https://hexed.it), les bits d'un octet sont affichés dans la colonne de gauche de l'éditeur.
+S'il est possible de le faire dans l'éditeur, l'enseignant·e montre les bits qui se cachent sous la notation hexadécimale des octets. Dans [Hexed.it](https://hexed.it), les bits d'un octet sont affichés dans la colonne de gauche de l'éditeur.
 
 ### Étape 2 : Introduction à la notation hexadécimale [10 minutes]
 
+L'enseignant explique la notation hexadécimale utilisée dans l'éditeur.
+Alors que la notation binaire est basée sur la base 2, la notation hexadécimale est basée sur la base 16.
+Les symboles utilisés pour représenter les 10 premiers chiffres sont les mêmes qu'en base 10: `0`, `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8` et `9`.
+Pour représenter les chiffres suivants, la notation fait appel à des lettres: `A`, `B`, `C`, `D`, `E` et `F`.
+
+La lecture et l'édition d'octets dans cette notation est en effet bien plus rapide qu'en notation binaire.
+À la place d'une série de 8 symboles en notation binaire, il suffit de 2 chiffres.
+De plus, chacun de ces chiffres correspond exactement à 4 bits, ce qui fait que chaque symbole peut-être converti en bits de manière indépendante.
+
+| Symbole | Valeur | Séquence de bits |
+|:-------:|:------:|:----------------:|
+|   `0`   |   0    |      `0000`      |
+|   `1`   |   1    |      `0001`      |
+|   `2`   |   2    |      `0010`      |
+|   `3`   |   3    |      `0011`      |
+|   `4`   |   4    |      `0100`      |
+|   `5`   |   5    |      `0101`      |
+|   `6`   |   6    |      `0110`      |
+|   `7`   |   7    |      `0111`      |
+|   `8`   |   8    |      `1000`      |
+|   `9`   |   9    |      `1001`      |
+|   `A`   |   10   |      `1010`      |
+|   `B`   |   11   |      `1011`      |
+|   `C`   |   12   |      `1100`      |
+|   `D`   |   13   |      `1101`      |
+|   `E`   |   14   |      `1110`      |
+|   `F`   |   15   |      `1111`      |
+
+L'enseignant peut proposer aux élèves un exercice de conversion entre base 2 et base 16:
+
+- Convertir `00` en binaire
+- Convertir `11111111` en hexadécimal
+- Convertir `3C` en binaire
+- Convertir `00010010` en hexadécimal
+
+
 ### Étape 3 : Prise en main de l'éditeur et découverte du format BMP [10 minutes]
+
+L'enseignant·e présente ensuite une introduction au format BMP au travers du petit fichier d'exemple (`petit.bmp`) sur l'éditeur.
+
+L'enseignant·e indique que les 54 premiers octets du fichier constituent l'entête du fichier.
+Cette entête contient notamment des informations sur les dimensions du fichiers, les couleurs utilisées, et ainsi de suite.
+
+Les 48 octets suivants représentent les pixels de l'images.
+Chacun des 16 pixels est encodé sur 3 octets (au format `Bleu-Vert-Rouge`).
+Initialement, tous les octets sont à `FF`, et donc tous les pixels sont blancs.
+
+L'enseignant·e indique que l'on utilise `FFFFFF` pour dénoter un pixel blanc, et indique 
+aux élèves de remplacer les octets du premier pixel par `000000` puis de télécharger le fichier et de l'ouvrir dans la visionneuse afin d'observer les changements.
+Le résultat attendu est le suivant.
+
+<img src="https://files.modulo-info.ch/bmp/petit-step.bmp" class="pixels" />
+
+#### Exercice
+
+L'enseignant·e présente l'ordre dans lequel apparaissent les pixels: de gauche à droite et de bas en haut.
+Les élèves sont ensuite amenés à reproduire un damier noir et blanc, tel que présenté sur l'image suivante.
+
+<img src="https://files.modulo-info.ch/bmp/damier.bmp" class="pixels" />
+
+#### Points d'attention
+
+- S'ils ne sont pas attentifs, les élèves peuvent se retrouver avec une images constituée de deux colonnes noires et deux colonnes blanches intercalées. En effet, il s'agit de l'image obtenue en alternant pixels noirs et blancs.
+- Les élèves peuvent se retrouver à ne plus pouvoir lire les fichiers qu'ils génèrent. En effet, une erreur dans le format peut amener à un fichier illisible. Pour résoudre ce problème, il s'agit simplement de vérifier que le fichier a bien le nombre attendu d'octets, et que les octets d'entête ne sont pas modifiés.
+- Les élèves peuvent obtenir des pixels aux couleurs inattendues suite à un décalage d'un ou deux octets dans l'encodage des pixels. Dans ce genre de cas, après l'erreur traitée, les élèves peuvent être amenés à documenter ce qui s'est passé: Quelle était la couleur obtenue, quel était son code ?
 
 ### Étape 4 : Représentation des couleurs [5 minutes]
 
