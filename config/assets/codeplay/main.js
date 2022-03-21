@@ -17,14 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
   const copyBtn = document.getElementById("copy");
   const executeBtn = document.getElementById("execute");
   const interruptBtn = document.getElementById("interrupt");
+  const downloadBtn = document.getElementById("download");
   const hintsBtn = document.getElementById("hints");
   const hintsArea = document.getElementById("tooltip");
   const hintsElem = document.getElementById("tooltip-content");
   const canvasArea = document.getElementById("canvas-area");
   const canvasElem = document.getElementById("canvas");
   const outputElem = document.getElementById("output");
+  const outputArea = document.getElementById("output-area");
   const outputDefaultMessage = document.getElementById("output-message");
 
+  var downloadFileName = "code.py";
   var prelude = "";
   var preludeLines = 0;
   var afterword = "";
@@ -33,10 +36,15 @@ document.addEventListener("DOMContentLoaded", function() {
   var codeLines = 0;
   var hints = [];
   var readOnly = false;
+  var alwaysShowOutput = false;
+  var alwaysHideOutput = false;
 
   var rejectInput = null;
 
   function outputElement(elem) {
+    if (!alwaysHideOutput) {
+      outputArea.style.display = "block";
+    }
     outputDefaultMessage.style.display = "none";
     const atBottom = outputElem.scrollTop + output.clientHeight >= outputElem.scrollHeight;
     outputElem.appendChild(elem);
@@ -97,9 +105,11 @@ document.addEventListener("DOMContentLoaded", function() {
     return Sk.builtinFiles["files"][x];
   }
 
+  var isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
   var codeElem = CodeMirror.fromTextArea(document.getElementById("code"), {
     lineNumbers: true,
-    theme: "idea",
+    theme: isDarkMode ? "monokai" : "idea",
     indentUnit: 4,
     indentWithTabs: false,
     smartIndent: true,
@@ -122,6 +132,11 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   });
 
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event){
+    isDarkMode = event.matches;
+    codeElem.setOption('theme', isDarkMode ? "monokai" : "idea");
+  });
+
   codeElem.on("change", resized);
 
   Sk.configure({
@@ -141,7 +156,10 @@ document.addEventListener("DOMContentLoaded", function() {
     switch(library) {
       case 'turtle':
         canvasArea.style.display = "block";
-        resized();
+        if (!alwaysShowOutput) {
+          outputArea.style.display = "none";
+        }
+        resizeCanvas();
         break;
     }
   }
@@ -154,6 +172,27 @@ document.addEventListener("DOMContentLoaded", function() {
   Sk.TurtleGraphics.height = 400;
   canvasElem.style.width = "600px";
   canvasElem.style.height = "400px";
+
+  function resizeCanvas() {
+    const availableWidth = canvasArea.clientWidth - 26;
+    if (availableWidth < 0) {
+      return;
+    }
+    const targetWidth = 600;
+    const targetHeight = 400;
+
+    if (availableWidth < targetWidth) {
+      const ratio = availableWidth / targetWidth;
+      canvasElem.style.transform = "scale(" + ratio + ")";
+      canvasArea.style.height = (targetHeight * ratio + 6) + "px";
+    }
+    else {
+      canvasArea.style.height = (targetHeight + 6) + "px";
+    }
+    resized();
+  }
+
+  window.addEventListener("resize", resizeCanvas);
 
   function errorToString(err) {
     var msg = err.tp$name + ": " + err.tp$str().v;
@@ -267,6 +306,28 @@ document.addEventListener("DOMContentLoaded", function() {
   executeBtn.addEventListener("click", runInterpreter);
   document.getElementById("execute-keyword").addEventListener("click", runInterpreter);
 
+  // Courtesy of https://stackoverflow.com/a/33542499
+  function saveFile(filename, data) {
+    const blob = new Blob([data], {type: 'text/x-python'});
+    if(window.navigator.msSaveOrOpenBlob) {
+      window.navigator.msSaveBlob(blob, filename);
+    }
+    else{
+      const elem = window.document.createElement('a');
+      elem.href = window.URL.createObjectURL(blob);
+      elem.download = filename;        
+      document.body.appendChild(elem);
+      elem.click();        
+      document.body.removeChild(elem);
+      window.URL.revokeObjectURL(elem.href);
+    }
+  }
+
+  downloadBtn.addEventListener("click", function() {
+    const data = codeElem.getValue();
+    saveFile(downloadFileName, data);
+  });
+
   function resized() {
     if (parent && parent.frameResized) {
       parent.frameResized(self);
@@ -367,6 +428,26 @@ document.addEventListener("DOMContentLoaded", function() {
       if (frame.hasAttribute("data-static")) {
         codeElem.setOption("readOnly", true);
         readOnly = true;
+      }
+      if (frame.hasAttribute("data-file")) {
+        downloadFileName = b64DecodeUnicode(frame.dataset.file);
+      }
+      if (frame.hasAttribute("data-output-min-lines")) {
+        const minLines = parseInt(frame.dataset.outputMinLines);
+        outputElem.style.minHeight = minLines * 1.3 + "em";
+        outputArea.style.minHeight = (minLines * 1.3 + 2) + "em";
+        if (minLines > 0) {
+          alwaysShowOutput = true;
+        }
+      }
+      if (frame.hasAttribute("data-output-max-lines")) {
+        const maxLines = parseInt(frame.dataset.outputMaxLines);
+        outputElem.style.maxHeight = maxLines * 1.3 + "em";
+        outputArea.style.maxHeight = (maxLines * 1.3 + 2) + "em";
+        if (maxLines === 0) {
+          alwaysHideOutput = true;
+          outputArea.style.display = "none";
+        }
       }
 
       resized();
