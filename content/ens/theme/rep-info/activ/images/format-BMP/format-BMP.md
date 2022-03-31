@@ -1,4 +1,4 @@
-# Conception d'images dans un éditeur hexadécimal
+# 6. Conception d'images dans un éditeur hexadécimal
 
 ## Introduction
 
