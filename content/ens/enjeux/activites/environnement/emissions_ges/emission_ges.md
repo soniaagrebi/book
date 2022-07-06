@@ -45,37 +45,36 @@ de la vie courante. Les activités sont les suivantes:
 En en discutant, chaque groupe doit ordonner les cartes des activités qui émettent le moins de GES à celles en émettent le plus selon leurs
 préconceptions et ainsi leur attribuer un rang de 1 à 5. 
 
-L'enseignant-e demande ensuite à chaque groupe le rang obtenu par chaque activité et fait la somme pour obtenir un "résultat de vote" global.
-Le résultat peut être présenté sous forme de coches au tableau afin d'être bien visuel. L'enseignant-e indique ensuite que les élèves vont
-vérifier l'ordonnancement proposer en faisant les calculs par elleux-même. Une activité est donc attribuée à chaque groupe qui va en calculer
+L'enseignant·e demande ensuite à chaque groupe le rang obtenu par chaque activité et fait la somme pour obtenir un "résultat de vote" global.
+Le résultat peut être présenté sous forme de coches au tableau afin d'être bien visuel. L'enseignant·e indique ensuite que les élèves vont
+vérifier l'ordonnancement proposé en faisant les calculs par elleux-même. Une activité est donc attribuée à chaque groupe qui va en calculer
 les émissions de GES. 
 
 ### 3. Rappel des notions de bases
 
-L'enseignant-e rappelle des notions bases utiles pour un calcul d'émission:
-1. Dans le cas de consommation électrique, les notions de puissance (watt), d'énergie (kWh) et de mix électrique (avec un lien vers electriciymap.org)
-1. Dans le cas de consommation d'hydrcarbure (mazout, essence), la quantité de d'hydrocarbure consommée (en litres) et sa conversion en emission de CO2
+L'enseignant·e rappelle des notions de bases utiles pour un calcul d'émission:
+1. Dans le cas de consommation électrique, les notions de puissance (watt), d'énergie (kWh) et de mix électrique (avec un lien vers electriciymap.org).
+1. Dans le cas de consommation d'hydrcarbure (mazout, essence), la quantité d'hydrocarbures consommée (en litres) et sa conversion en emission de CO2.
 1. Un rappel sur l'utilisation d'un tableur avec un exemple de mise en page attendue, notamment l'indication explicite de toutes les valeurs utilisées et
-de leur source
+de leur source.
 1. Selon le temps à disposition, il est possible de demander aux élève d'estimer non-pas une valeur mais une fourchette selon les choix effectués.
-1. Selon le temps à disposition, il est possible de parler de la notion d'"amortissement" qui permet de répartir les émissions liées à la production des appareils
-sur la consommation. 
+1. Selon le temps à disposition, il est possible de parler de la notion d'"amortissement" qui permet de répartir les émissions liées à la production des appareil sur la consommation. 
 
 ### 4. Travail en groupe
-Chaque groupe essaie d'estimer la consommation de CO2 de son activité. L'enseignant-e circule entre les groupes et apporte soutien et indications. 
+Chaque groupe essaie d'estimer la consommation de CO2 de son activité. L'enseignant·e circule entre les groupes et apporte soutien et indications. 
 Une fois le calcul éffectué, les élèves doivent chercher sur internet s'il est possible de trouver la quantité de GES émise lors de la production
 de l'appareil utilisé. 
 
 ### 5. Présentation et discussion des résultats
 
-Chaque groupe présente à tour de rôle sa feuille de calcule, et justifie les choix effectués. L'enseignant-e corrige au besoin et demande à la classe
+Chaque groupe présente à tour de rôle sa feuille de calcul, et justifie les choix effectués. L'enseignant·e corrige au besoin et demande à la classe
 s'il y a des éléments dont il n'a pas été tenu compte dans le calcul. 
-On note le résultat obtenu en vis-a-vis du sondage "à priori".
-On compare ensuite l'ensemble des résultats avec ceux des sondages, et une discussion s'ensuit. Les élèves peuvent partager s'ils et elles sont surpris-es par
-les résultats. 
+On note le résultat obtenu en vis-a-vis du sondage "a priori".
+On compare ensuite l'ensemble des résultats avec ceux des sondages, et une discussion s'ensuit. Les élèves peuvent partager s'ils et elles sont surpris·e·s par les résultats. 
 
 ### 6. Conclusion
-En guise de conclusion et pour boucler la boucle, l'enseignant présente des graphiques résumant les principaux postes d'émissions de GES par la Suisse (surtout transports et chauffage), explique la distinction entre émissions locales et importées, et montre où en est la Suisse par rapport aux capacités d'absorbtion de la planète (23x en 2015).  
+
+En guise de conclusion et pour boucler la boucle, l'enseignant·e présente des graphiques résumant les principaux postes d'émissions de GES par la Suisse (surtout transports et chauffage), explique la distinction entre émissions locales et importées, et montre où en est la Suisse par rapport aux capacités d'absorbtion de la planète (23x en 2015).  
 
 
 
