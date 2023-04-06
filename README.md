@@ -17,6 +17,8 @@ Ces ressources sont mises à disposition selon les termes de la <a rel="license"
 ** [Installation](doc/installation.md)  [Contribuer](CONTRIBUTING.md) **
 
 <h2 align="center">
+  ** [Installation](doc/installation.md)
+  <span> · </span>
   <a href="https://github.com/edunumsec2/book/blob/documentation/CONTRIBUTING.md">Contribuer</a>
   <span> · </span>
   <a href="https://github.com/edunumsec2/book/blob/documentation/CODE_OF_CONDUCT.md">Code de conduite</a>
